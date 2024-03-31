@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing game</title>
+   
+    <style>
+        body{
+            background: gray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+       
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 10px;
+
+        }
+        form>input{
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        
+        <h1>Guess a number</h1>
+        <form action="">
+            <input type="number" name="" id="guess"><br>
+            <button type="submit" id="sub" style="background-color: black;color:white; width:55%;margin:auto;padding:5px">Submit guess</button>
+        </form>
+        <div class="guessParas">
+            <p>Previous guesses: <span id="prev-guess"></span></p>
+        <p>Remaining guesses <span id="rem-guess">10</span></p>
+        <p id="loH"></p>
+        </div>
+    </div>
+</body>
+<script src="number_guess.js"></script>
+</html>
